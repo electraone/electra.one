@@ -13,6 +13,8 @@
              "openPagesMenu",
              "openMenu",
              "openDetail",
+             "switchHandleNext",
+             "switchHandlePrev",
              "closeDetail",
              "closePopupWindow",
              "requestPatch",
@@ -32,7 +34,7 @@
              "switchSnapshotBank",
              "togglePotSensitivity",
              "setDefaultValue",
-             "alternate"
+             "toggleAlt"
           ]
        },
        "buttonAction":{
@@ -46,6 +48,9 @@
              "openPagesMenu",
              "openMenu",
              "closePopupWindow",
+             "openDetail",
+             "switchHandleNext",
+             "switchHandlePrev",
              "requestPatch",
              "switchPresetNext",
              "switchPresetPrev",
@@ -57,7 +62,7 @@
              "switchControlSetNext",
              "switchControlSetPrev",
              "togglePotSensitivity",
-             "alternate"
+             "toggleAlt"
           ]
        },
        "midiMessage":{
@@ -233,7 +238,6 @@
           "usbHostAssigments":[
              {
                 "pattern":"APC",
-                "port":"port2",
                 "bankNumber":5,
                 "presetSlot":1,
                 "ports":[
@@ -637,7 +641,6 @@
                 },
                 {
                    "pattern":"APC",
-                   "port":"port2",
                    "bankNumber":5,
                    "presetSlot":1,
                    "ports":[
@@ -668,8 +671,7 @@
                 }
              ],
              "required":[
-                "pattern",
-                "port"
+                "pattern"
              ],
              "properties":{
                 "pattern":{
@@ -1123,7 +1125,15 @@
                       "primary":{
                          "$id":"#/properties/hardware/properties/buttons/items/properties/primary",
                          "$ref":"#/definitions/buttonAction"
-                      }
+                      },
+                      "alt":{
+                        "$id":"#/properties/hardware/properties/buttons/items/properties/alt",
+                        "$ref":"#/definitions/buttonAction"
+                     },
+                     "knobTouch":{
+                        "$id":"#/properties/hardware/properties/buttons/items/properties/knobTouch",
+                        "$ref":"#/definitions/buttonAction"
+                     }
                    },
                    "additionalProperties":false
                 }
