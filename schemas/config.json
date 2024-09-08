@@ -1127,13 +1127,13 @@
                          "$ref":"#/definitions/buttonAction"
                       },
                       "alt":{
-                        "$id":"#/properties/hardware/properties/buttons/items/properties/alt",
-                        "$ref":"#/definitions/buttonAction"
-                     },
-                     "knobTouch":{
-                        "$id":"#/properties/hardware/properties/buttons/items/properties/knobTouch",
-                        "$ref":"#/definitions/buttonAction"
-                     }
+                         "$id":"#/properties/hardware/properties/buttons/items/properties/alt",
+                         "$ref":"#/definitions/buttonAction"
+                      },
+                      "knobTouch":{
+                         "$id":"#/properties/hardware/properties/buttons/items/properties/knobTouch",
+                         "$ref":"#/definitions/buttonAction"
+                      }
                    },
                    "additionalProperties":false
                 }
